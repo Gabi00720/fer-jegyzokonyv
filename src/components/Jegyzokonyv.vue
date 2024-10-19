@@ -5,7 +5,7 @@
     <div class="w-11/12 mx-auto mb-28">
       <select
         v-model="selectedItemsName"
-        class="mt-4 border border-gray-300 w-5/12"
+        class="mt-4 border border-gray-300 md:w-5/12 w-10/12 "
       >
         <option value="items">Terület 1</option>
         <option value="items2">Terület 2</option>
@@ -211,6 +211,25 @@ td {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .signature-section {
+    flex-direction: column;
+  }
+
+  .signature-block {
+    width: 90%; 
+    margin-bottom: 16px; 
+  }
+
+  .signature-block:last-child {
+    margin-bottom: 0; 
+  }
+
+  hr {
+    width: 90%;
+  }
 }
 
 .signature-block {
