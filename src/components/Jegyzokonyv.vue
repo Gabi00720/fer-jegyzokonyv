@@ -1,7 +1,7 @@
 <template>
-  <div class="conatiner bg-white w-8/12 mx-auto rounded mt-4">
-    <p class="text-center">FER jegyzőkönyv</p>
-    <table class="w-full text-center mt-5">
+  <div class="conatiner bg-white lg:w-8/12 w-11/12 mx-auto rounded mt-4 pb-5">
+    <img src="@/assets/FER-logo.png" alt="FER Logo" class="w-32 mx-auto mt-4" />
+    <table class="w-11/12 text-center mt-5 mx-auto">
       <thead>
         <tr>
           <th>Megnevezés</th>
@@ -32,7 +32,7 @@
 import { ref } from "vue";
 
 const items = ref([
-  { id: 1, name: "Tűzoltókészülék" },
+  { id: 1, name: "Megnevezés 1" },
   { id: 2, name: "Megnevezés 2" },
   { id: 3, name: "Megnevezés 3" },
   { id: 4, name: "Megnevezés 4" },
@@ -40,4 +40,8 @@ const items = ref([
 ]);
 </script>
 
-<style scoped></style>
+<style scoped>
+td, th {
+    border: 1px solid black;
+}
+</style>
